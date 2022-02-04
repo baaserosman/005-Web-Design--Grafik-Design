@@ -27,19 +27,19 @@
   <body>
     <!-- ************* HEADER *************** -->
     <header class="sticky-top bg-white p-2">
-      <div class="container-fluid ">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-6 col-md-3 col-lg-2  ">
+          <div class="col-6 col-md-3 col-lg-2">
             <a href="#">
               <img src="./img/logo.png" alt="" />
             </a>
           </div>
 
-          <div class="col-6 col-md-9 col-lg-10 ">
+          <div class="col-6 col-md-9 col-lg-10">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
-              <div class="container-fluid ">
+              <div class="container-fluid d-flex justify-content-end">
                 <button
-                  class="navbar-toggler ms-auto 
+                  class="navbar-toggler"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarNavDropdown"
@@ -47,12 +47,16 @@
                   aria-expanded="false"
                   aria-label="Toggle navigation"
                 >
-                  <span class="navbar-toggler-icon "></span>
+                  <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                   <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="#about me"
+                      >
                         <i class="fas fa-info"></i>About Me</a
                       >
                     </li>
@@ -72,27 +76,37 @@
                         class="dropdown-menu"
                         aria-labelledby="navbarDropdownMenuLink"
                       >
-                        <li><a class="dropdown-item" href="#">Service 1</a></li>
-                        <li><a class="dropdown-item" href="#">Service 2</a></li>
                         <li>
-                          <a class="dropdown-item" href="#">Service 3</a>
+                          <a class="dropdown-item" href="#services"
+                            >Service 1</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#services"
+                            >Service 2</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#services"
+                            >Service 3</a
+                          >
                         </li>
                       </ul>
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link" href="#">
+                      <a class="nav-link" href="#customers">
                         <i class="fas fa-users"></i>
                         Customers</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">
+                      <a class="nav-link" href="#reference">
                         <i class="fas fa-th-list"></i> References</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">
+                      <a class="nav-link" href="#contact">
                         <i class="fas fa-phone"></i> Contact</a
                       >
                     </li>
@@ -131,7 +145,7 @@
       <section id="about me" class="about">
         <div class="container-fluid bg-light p-4">
           <div class="row m-4">
-            <div class="col-12 col-md-6">
+            <div class="img-container col-12 col-md-6">
               <img
                 class="about-img"
                 src="./img/laptop-2838921_960_720.jpg"
@@ -164,10 +178,18 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://www.youtube.com/" target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="https://www.linkedin.com/" target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -184,17 +206,18 @@
           </div>
           <div class="row g-3">
             <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="card ">
-              <i class="fas fa-object-ungroup"></i>
-              <div class="card-body">
-                <h3>Web Design</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid consectetur amet reiciendis et officia quisquam repellendus sequi minima quam debitis quasi rem qui facere iure omnis quod quis, hic ab.
-                </p>
+              <div class="card">
+                <i class="fas fa-object-ungroup"></i>
+                <div class="card-body">
+                  <h3>Web Design</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aliquid consectetur amet reiciendis et officia quisquam
+                    repellendus sequi minima quam debitis quasi rem qui facere
+                    iure omnis quod quis, hic ab.
+                  </p>
+                </div>
               </div>
-            </div>
-
-
             </div>
             <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
@@ -202,93 +225,98 @@
                 <div class="card-body">
                   <h3>Grafik Design</h3>
                   <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid consectetur amet reiciendis et officia quisquam repellendus sequi minima quam debitis quasi rem qui facere iure omnis quod quis, hic ab.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aliquid consectetur amet reiciendis et officia quisquam
+                    repellendus sequi minima quam debitis quasi rem qui facere
+                    iure omnis quod quis, hic ab.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="card ">
-              <i class="fas fa-search"></i>
-              <div class="card-body">
-                <h3>SEO</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid consectetur amet reiciendis et officia quisquam repellendus sequi minima quam debitis quasi rem qui facere iure omnis quod quis, hic ab.
-                </p>
+              <div class="card">
+                <i class="fas fa-search"></i>
+                <div class="card-body">
+                  <h3>SEO</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aliquid consectetur amet reiciendis et officia quisquam
+                    repellendus sequi minima quam debitis quasi rem qui facere
+                    iure omnis quod quis, hic ab.
+                  </p>
+                </div>
               </div>
             </div>
-
-
-
-            </div>
-            <div class="col col-12 col-sm-6 col-md-4 col-lg-3" >
-              <div class="card ">
-              <i class="fab fa-wordpress"></i>
-              <div class="card-body">
-                <h3>Wordpress</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid consectetur amet reiciendis et officia quisquam repellendus sequi minima quam debitis quasi rem qui facere iure omnis quod quis, hic ab.
-                </p>
+            <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">
+                <i class="fab fa-wordpress"></i>
+                <div class="card-body">
+                  <h3>Wordpress</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aliquid consectetur amet reiciendis et officia quisquam
+                    repellendus sequi minima quam debitis quasi rem qui facere
+                    iure omnis quod quis, hic ab.
+                  </p>
+                </div>
               </div>
-            </div>
-
-            </div>            
-            <div class="col col-12 col-sm-6 col-md-4 col-lg-6">
-              <div class="card ">
-              <i class="fas fa-magic"></i>
-              <div class="card-body">
-                <h3>Responsive Design</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid consectetur amet reiciendis et officia quisquam repellendus sequi minima quam debitis quasi rem qui facere iure omnis quod quis, hic ab.
-                </p>
-              </div>
-            </div>
-
-
             </div>
             <div class="col col-12 col-sm-6 col-md-4 col-lg-6">
-              <div class="card ">
-              <i class="fab fa-twitter"></i>
-              <div class="card-body">
-                <h3>Social Media</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid consectetur amet reiciendis et officia quisquam repellendus sequi minima quam debitis quasi rem qui facere iure omnis quod quis, hic ab.
-                </p>
+              <div class="card">
+                <i class="fas fa-magic"></i>
+                <div class="card-body">
+                  <h3>Responsive Design</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aliquid consectetur amet reiciendis et officia quisquam
+                    repellendus sequi minima quam debitis quasi rem qui facere
+                    iure omnis quod quis, hic ab.
+                  </p>
+                </div>
               </div>
             </div>
+            <div class="col col-12 col-sm-6 col-md-4 col-lg-6">
+              <div class="card">
+                <i class="fab fa-twitter"></i>
+                <div class="card-body">
+                  <h3>Social Media</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aliquid consectetur amet reiciendis et officia quisquam
+                    repellendus sequi minima quam debitis quasi rem qui facere
+                    iure omnis quod quis, hic ab.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          </div>
+        </div>
       </section>
       <!-- *************CUSTOMERS*************** -->
       <section id="customers" class="container-fluid customers">
         <div class="title">
           <i class="fab fa-asymmetrik fa-2x"></i>
           <h2>What did our customers say about us?</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing.
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         </div>
 
         <div class="costumer">
           <div>
-            <img src="./img/user-1.jpg" alt="user-1">
-            <p> 
+            <img src="./img/user-1.jpg" alt="user-1" />
+            <p>
               <em>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus asperiores pariatur nobis, autem quibusdam qui molestiae maxime quam aspernatur eligendi aliquid voluptatibus impedit esse quae vel, mollitia officiis labore dolores! Eum minus, necessitatibus itaque perferendis deserunt tempora. Amet a blanditiis consequatur iste facilis dolor ea praesentium repellat ex, sapiente vel.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Ducimus asperiores pariatur nobis, autem quibusdam qui molestiae
+                maxime quam aspernatur eligendi aliquid voluptatibus impedit
+                esse quae vel, mollitia officiis labore dolores! Eum minus,
+                necessitatibus itaque perferendis deserunt tempora. Amet a
+                blanditiis consequatur iste facilis dolor ea praesentium
+                repellat ex, sapiente vel.
               </em>
             </p>
-            <p>- Jonas <b>Qudarama </b> </p>
-
+            <p>- Jonas <b>Qudarama </b></p>
           </div>
-          
-          
-
         </div>
-        
-
-
-
       </section>
 
       <!-- ************* REFERENCES ************** -->
@@ -297,105 +325,113 @@
         <div class="title">
           <i class="fab fa-asymmetrik fa-2x"></i>
           <h2>Our References</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quas hic sed labore quo veniam!</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            quas hic sed labore quo veniam!
+          </p>
         </div>
 
         <div class="buttons">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#">All</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Web Design</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Grafik Design</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">SEO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Wordpress</a>
-                </li>                
-            </ul>            
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#reference">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#reference">Web Design</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reference">Grafik Design</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reference">SEO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reference">Wordpress</a>
+            </li>
+          </ul>
         </div>
 
         <div class="container cards">
-            <div class="row">
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card">
-                  <img src="./img/work-1.jpg" class="card-img-top" alt="work-1">
-                  <h3>Project Name</h3>
-                </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">
+                <img src="./img/work-1.jpg" class="card-img-top" alt="work-1" />
+                <h3>Project Name</h3>
+              </div>
             </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card">
-                  <img src="./img/work-2.jpg" class="card-img-top" alt="
-                  work-2">
-                  <h3>Project Name</h3>
-                </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">
+                <img
+                  src="./img/work-2.jpg"
+                  class="card-img-top"
+                  alt="
+                  work-2"
+                />
+                <h3>Project Name</h3>
               </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card">
-                  <img src="./img/work-3.jpg" class="card-img-top" alt="work-3">
-                  <h3>Project Name</h3>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card">
-                  <img src="./img/work-4.jpg" class="card-img-top" alt="work-4">
-                  <h3>Project Name</h3>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-6">
-                <div class="card">
-                  <img src="./img/work-5.jpg" class="card-img-top" alt="work-5">
-                  <h3>Project Name</h3>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-6">
-                <div class="card">
-                  <img src="./img/work-6.jpg" class="card-img-top" alt="work-6">
-                  <h3>Project Name</h3>
-                </div>
-              </div>
-              
-
             </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">
+                <img src="./img/work-3.jpg" class="card-img-top" alt="work-3" />
+                <h3>Project Name</h3>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">
+                <img src="./img/work-4.jpg" class="card-img-top" alt="work-4" />
+                <h3>Project Name</h3>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-6">
+              <div class="card">
+                <img src="./img/work-5.jpg" class="card-img-top" alt="work-5" />
+                <h3>Project Name</h3>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-6">
+              <div class="card">
+                <img src="./img/work-6.jpg" class="card-img-top" alt="work-6" />
+                <h3>Project Name</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- ************* CONTACT ************** -->
 
-      <section id="contact" class="container-fluid contact  bg-light mt-4 p-4">
-        
+      <section id="contact" class="container-fluid contact bg-light mt-4 p-4">
         <div class="title">
           <i class="fab fa-asymmetrik fa-2x"></i>
-          <h2>Our References</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quas hic sed labore quo veniam!</p>
+          <h2>CONTACT</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+            nemo, possimus at deleniti natus ad quibusdam illo commodi
+            dignissimos cupiditate quas repellendus hic laborum. Reprehenderit,
+            quia. Sed eaque harum similique aliquam quod.
+          </p>
         </div>
 
         <div class="icons">
-          <div class="row text-center my-4 ">
-            <div class="col-12 col-sm-4 ">
+          <div class="row text-center my-4">
+            <div class="col-12 col-sm-4">
               <i class="fas fa-phone fa-2x"></i>
               <h5>Telefon</h5>
               <a href="tel:+49666657778">+49 666 657 778</a>
             </div>
-            <div class="col-12 col-sm-4 ">
+            <div class="col-12 col-sm-4">
               <i class="fab fa-whatsapp fa-2x"></i>
               <h5>Whatsapp</h5>
               <a href="https://wa.me/+4966665778" target="_blank"
                 >+49(333)444 66 77</a
               >
             </div>
-            <div class="col-12 col-sm-4 ">
+            <div class="col-12 col-sm-4">
               <i class="fas fa-envelope fa-2x"></i>
               <h5>Email</h5>
               <a href="mailto:info@clarusway.com">info@clarusway.com</a>
             </div>
-        </div>
-
+          </div>
         </div>
 
         <div class="form">
@@ -409,7 +445,7 @@
                 aria-describedby="emailHelp"
               />
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4" >
+            <div class="col-sm-12 col-md-6 col-lg-4">
               <input
                 type="email"
                 class="form-control"
@@ -444,8 +480,7 @@
                 Submit
               </button>
             </div>
-        </form>
-
+          </form>
         </div>
 
         <article id="location" class="mt-4">
@@ -458,29 +493,32 @@
             loading="lazy"
           ></iframe>
         </article>
-
       </section>
       <a href="#" class="up-btn"><i class="fas fa-arrow-up fa-2x"></i></a>
     </main>
 
-
     <footer>
-      <div class="container-fluid ">
+      <div class="container-fluid">
         <div class="social-icons">
-          <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
-          <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-          <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
-          <a href="#"><i class="fab fa-google-plus-square fa-2x"></i></a>
+          <a href="facebook.com/" target="_blank"
+            ><i class="fab fa-facebook-square fa-2x"></i
+          ></a>
+          <a href="twitter.com/"
+            ><i class="fab fa-twitter-square fa-2x" target="_blank"></i
+          ></a>
+          <a href="instagram.com/" target="_blank"
+            ><i class="fab fa-instagram-square fa-2x"></i
+          ></a>
+          <a href="https://github.com/" target="_blank"
+            ><i class="fab fa-github-square fa-2x"></i
+          ></a>
         </div>
 
         <div class="copyright text-center p-3 fs-5">
-          ©2022 Copyright by <b><i> Bascher</i>  </b> 
+          ©2022 Copyright by <b><i> Bascher</i> </b>
         </div>
-        
       </div>
     </footer>
-
-
 
     <!------------------ SCRIPTS --------------------->
 

@@ -197,10 +197,25 @@ section.banner::after{
 .reference {
   text-align: center;
 }
+.reference .nav-item{
+  margin-right: 1rem;
+  border-radius: 2rem;
+  font-size:1.2rem;  
+  transition: all 0.5s;  
+}
 
-.nav-link {
+.reference .nav-item:hover {
+  color:white;  
+  background-color:#860174;
+  border-radius: 2rem;  
+}
+.reference .nav-item:hover a {
+  color:white;
+}
+
+.reference .nav-link {
   cursor: pointer;
-  color: #860174;
+  color: #860174;  
 }
 
 .buttons .nav-item a.active {
@@ -212,7 +227,7 @@ section.banner::after{
 }
 .cards .card {
   margin: 1rem;
-  padding: 0;
+  padding: 0;  
   position: relative;
   overflow: hidden;
   border-style: none;
@@ -235,13 +250,7 @@ section.banner::after{
   width: 0;
 }
 
-/* .cards .card:hover h3 {
-  position: absolute;
-  top: 20%;
-  left: 30%;
-  transform: translate(50%, -500%);
-  opacity: 1;
-} */
+
 
 .cards .card img {
   max-width: 100%;
@@ -250,25 +259,25 @@ section.banner::after{
   border-style: none;
 }
 
-.cards .card h3 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 700%);
-  color: white;
-  transition: all 0.5s;
-}
 
-/* .cards .card h3:hover {
-  text-align: center;
-  color: white;
-} */
+
 
 /*! *********** CONTACT *******************/
 
 .contact {
   text-align: center;
 }
+.icons a {
+  color:black;
+  transition: all;
+}
+
+.icons a:hover {
+  font-weight: bold;
+  text-decoration: underline #9e3490;
+  color:#9e3490;
+}
+
 
 form {
   display: flex;

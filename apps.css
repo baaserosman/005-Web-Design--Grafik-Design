@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -82,14 +83,12 @@ section.banner::after{
 
 /*! *********** ABOUT ME *******************/
 
-.about-img {
-  
+.about-img {  
   width: 100%;
 }
 
 .social-icons {
   display: flex;
-
 }
 
 .about .text i {
@@ -141,9 +140,7 @@ section.banner::after{
   text-align: center;
   background-color: rgba(39, 39, 37, 0.712);
 }
-.services .fab {
-  color: white;
-}
+
 
 .services .title {
   color: white;
@@ -173,8 +170,7 @@ section.banner::after{
   margin: 0.5rem auto;
 }
 
-.card i {
-  color: #9e3490;
+.card i {  
   font-size: 3rem;
 }
 
@@ -218,13 +214,7 @@ section.banner::after{
   color: #860174;  
 }
 
-.buttons .nav-item a.active {
-  display: block;
-  background-color: #860174;
-  color: white;
-  border-radius: 2rem;
-  padding: 0.5rem 1rem;
-}
+
 .cards .card {
   margin: 1rem;
   padding: 0;  
@@ -234,7 +224,7 @@ section.banner::after{
   cursor: pointer;
   border-radius: 2rem;  
 }
-.cards .card::after {
+.cards .card::after{
   content: "";
   position: absolute;
   height: 100%;
@@ -245,7 +235,7 @@ section.banner::after{
   transition: all 2s;
 }
 
-.cards .card:hover::after {
+.cards .card:hover::after{
   opacity: 0.8;
   width: 0;
 }
@@ -322,8 +312,7 @@ footer {
   padding:2rem;
 }
 
-footer .social-icons a{
-  
+footer .social-icons a{  
   background-color:white;
   border: 1px;solid ;
   border-radius: 50%;
@@ -334,7 +323,7 @@ footer .social-icons a{
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  }
+}
 
 
 footer .social-icons .fab {  

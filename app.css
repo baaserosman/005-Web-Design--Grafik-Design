@@ -13,26 +13,21 @@ a {
 .fab,
 .fas {
   color: #9e3490;
-  
 }
 
 /*! *********** HOME *******************/
 
 .navbar-nav .nav-item {
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 }
 
-.navbar-nav .nav-link {
-  padding-right: rem;
-}
 .navbar-nav .nav-link .fas {
-  color: #860174;
   padding-right: 5px;
 }
 
 /*! *********** HOME *******************/
 
-section.banner {
+.banner {
   background-image: url(./img/desk-593327_960_720.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,25 +40,24 @@ section.banner {
   text-align: center;
 }
 
-section.banner::after{
+.banner::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  right: 0;  
+  right: 0;
   background-color: #9e3490;
   opacity: 0.1;
-  transition:all 2s;
+  transition: all 2s;
 }
-.banner:hover::after{  
-  opacity:0.4;
+.banner:hover::after {
+  opacity: 0.4;
   width: 0;
 }
 
 .banner .text {
   box-sizing: border-box;
   color: white;
-  z-index: 3;
 }
 
 .banner .text .btn {
@@ -83,7 +77,7 @@ section.banner::after{
 
 /*! *********** ABOUT ME *******************/
 
-.about-img {  
+.about-img {
   width: 100%;
 }
 
@@ -91,9 +85,6 @@ section.banner::after{
   display: flex;
 }
 
-.about .text i {
-  color: 9e3490;
-}
 .about .social-icons a {
   background-color: white;
   color: #9e3490;
@@ -109,30 +100,6 @@ section.banner::after{
   margin-right: 1rem;
 }
 
-
-
-/* Bu bölümü iptal ettim Böylede olur .*/
-
-/* .about .social-icons a {
-  background-color: white;
-  color: #9e3490;
-  border: 1px solid rgb(39, 39, 37);
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  display: inline-block;
-  font-size: 1.5rem;
-  position: relative;
-  margin-right: 1rem;
-} */
-
-/* .about .social-icons i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-
 /*! *********** SERVİCES *******************/
 
 .services .container-fluid {
@@ -141,8 +108,10 @@ section.banner::after{
   background-color: rgba(39, 39, 37, 0.712);
 }
 
-
 .services .title {
+  color: white;
+}
+.services .title .fab {
   color: white;
 }
 
@@ -156,10 +125,6 @@ section.banner::after{
   font-size: 1.3rem;
   margin: 1rem 0;
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-weight: bold;
 }
 .card h3::after {
@@ -170,7 +135,7 @@ section.banner::after{
   margin: 0.5rem auto;
 }
 
-.card i {  
+.card i {
   font-size: 3rem;
 }
 
@@ -193,38 +158,37 @@ section.banner::after{
 .reference {
   text-align: center;
 }
-.reference .nav-item{
+.reference .nav-item {
   margin-right: 1rem;
   border-radius: 2rem;
-  font-size:1.2rem;  
-  transition: all 0.5s;  
+  font-size: 1.2rem;
+  transition: all 0.5s;
 }
 
 .reference .nav-item:hover {
-  color:white;  
-  background-color:#860174;
-  border-radius: 2rem;  
+  color: white;
+  background-color: #860174;
+  border-radius: 2rem;
 }
 .reference .nav-item:hover a {
-  color:white;
+  color: white;
 }
 
 .reference .nav-link {
   cursor: pointer;
-  color: #860174;  
+  color: #860174;
 }
-
 
 .cards .card {
   margin: 1rem;
-  padding: 0;  
+  padding: 0;
   position: relative;
   overflow: hidden;
   border-style: none;
   cursor: pointer;
-  border-radius: 2rem;  
+  border-radius: 2rem;
 }
-.cards .card::after{
+.cards .card::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -235,12 +199,10 @@ section.banner::after{
   transition: all 2s;
 }
 
-.cards .card:hover::after{
+.cards .card:hover::after {
   opacity: 0.8;
   width: 0;
 }
-
-
 
 .cards .card img {
   max-width: 100%;
@@ -249,25 +211,21 @@ section.banner::after{
   border-style: none;
 }
 
-
-
-
 /*! *********** CONTACT *******************/
 
 .contact {
   text-align: center;
 }
-.icons a {
-  color:black;
+.contact .icons a {
+  color: black;
   transition: all;
 }
 
-.icons a:hover {
+.contact .icons a:hover {
   font-weight: bold;
   text-decoration: underline #9e3490;
-  color:#9e3490;
+  color: #9e3490;
 }
-
 
 form {
   display: flex;
@@ -305,35 +263,34 @@ footer {
   font-weight: 1.5 rem;
   background-color: rgba(0, 0, 0, 0.712);
 }
-.social-icons {
+footer .social-icons {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  padding:2rem;
+  padding: 2rem;
 }
 
-footer .social-icons a{  
-  background-color:white;
-  border: 1px;solid ;
+footer .social-icons a {
+  background-color: white;
+  border: 1px solid #9e3490;
   border-radius: 50%;
-  width:3rem;
-  height:3rem;  
+  width: 3rem;
+  height: 3rem;
   margin-right: 1rem;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 }
 
-
-footer .social-icons .fab {  
- color: #9e3490;
+footer .social-icons .fab {
+  color: #9e3490;
 }
 
-.social-icons a:hover {  
+.social-icons a:hover {
   background-color: #9e3490;
 }
 
-.social-icons a:hover .fab{
-  color:white;
+.social-icons a:hover .fab {
+  color: white;
 }
